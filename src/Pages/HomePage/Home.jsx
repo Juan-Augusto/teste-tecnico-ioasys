@@ -4,14 +4,18 @@ import axios from "axios";
 
 
 export const Home = () => {
-    const [booksList, setBooksList] = useState([]);
-    // useEffect(() => {
-    //     axios.get("https://books.ioasys.com.br/api/v1/books")
-    //         .then(res => {
-    //             setBooksList(res.data);
-    //             console.log(res.data);
-    //         })
-    // },[])
+    // const [booksList, setBooksList] = useState([]);
+
+    const getBooks = async () => {
+        const res = await axios.get("https://books.ioasys.com.br/api/v1/books", {
+            headers: {Authorization: `Bearer ${token}`}
+        });
+        console.log(res.data);
+    }
+    useEffect(() => {
+        getBooks();
+    }, []);
+
     return (
         <div className="home-container">
             <div className="header-container">

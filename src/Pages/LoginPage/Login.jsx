@@ -22,6 +22,7 @@ export const Login = () => {
         if (res.data.name) {
           setUsername(res.data.name);  
           window.location.href = "/home";
+          console.log(res.headers);
         } else {
           setError("Usuário ou senha incorretos");
         }
