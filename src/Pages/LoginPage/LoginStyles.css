@@ -5,20 +5,25 @@
     box-sizing: border-box;
 }
 .login-container{
-    background-image: url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+    background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEgvnysnklzMryWlmTiiwvPynAHB0E9C8FMqBzhaGyLc3UTYJhUfWbJrj2phDG_VDUWlT2ZaXPLJb1XLnbGQ2hYA9LILedy8vmUo2THR2TnydAUhPVD-wYDRKkLuVKy-FWiDcmwWawDNuRkPB0YUOL0loLhFXCBW1fVfy9x9aCEXjsHxUzMuA0dXECEh0w);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
-.login-container h1, span{
+.header-login{
+    margin-bottom: 50px;
+}
+.main-login-title{
     color: #fff;
     font-family: 'Heebo', sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
-.login-container span{
+.login-header-subtitle{
     font-weight: 400;
 }
 .input-container{
@@ -53,4 +58,15 @@
     font-weight: 500;
     font-size: 16px;
     padding: 8px 20px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+.login-button:hover{
+    opacity: .8;
+}
+
+@media(min-width: 768px){
+    .login-container{
+        background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjjQWTjtwb_lQcGmdChtVa6NKWtIkmm0sIPpx0BMZS-kUV6K_NgnHC7x8E9msdNrqAyy7xR5YqksWpu2kaXf0vquJzMqbw7-Rj4RQxPQ7Txg6f8I0x2nrqlnLw0bOPB9Jda75f2cYWnFJGJ7_Jh3j9a6U8sVilCFjRtomSBP_AnSDM3fRhZEfxQ2aW8ww);
+    }
 }
